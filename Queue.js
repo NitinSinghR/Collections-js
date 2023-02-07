@@ -15,7 +15,7 @@ class Queue{
             this.rootNode = new Node(value)
             this.count++;
         } else {
-            var temp = this.rootNode;
+            let temp = this.rootNode;
             while (temp.nextNode != null) {
                 temp = temp.nextNode;
             }
@@ -26,7 +26,7 @@ class Queue{
 
     pop() 
 	{
-        var temp=this.rootNode;
+        let temp=this.rootNode;
         temp=temp.nextNode;
         this.rootNode=temp;
 	}
@@ -47,7 +47,7 @@ class Queue{
 	}
 }
 
-var obj=new Queue();
+let obj=new Queue();
 
 console.log("Pushing elemnts");
 obj.push(5);

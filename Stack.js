@@ -16,7 +16,7 @@ class Stack
             this.rootNode = new Node(value)
             this.count++;
         } else {
-            var temp = this.rootNode;
+            let temp = this.rootNode;
             while (temp.nextNode != null) {
                 temp = temp.nextNode;
             }
@@ -30,8 +30,8 @@ class Stack
 	}
 	pop() 
 	{
-        var temp=this.rootNode;
-        var previousNode;
+        let temp=this.rootNode;
+        let previousNode;
 		while (temp.nextNode != null) {
             previousNode=temp;
             temp = temp.nextNode;
@@ -42,7 +42,7 @@ class Stack
 	peek()
     {
         if (!this.isEmpty()) {
-            var temp=this.rootNode;
+            let temp=this.rootNode;
 		while (temp.nextNode != null) {
             temp = temp.nextNode;
         }
@@ -69,7 +69,7 @@ class Stack
 	}
 }
 
-var obj = new Stack();
+let obj = new Stack();
 
 console.log("After pushing ");
 obj.push(11);
