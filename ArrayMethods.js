@@ -121,7 +121,8 @@ function sub(total,num){
 }
 
 console.log("Reverse");
-console.log(fruits.reverse());
+fruits.reverse();
+console.log(fruits);
 
 console.log("Shift");
 console.log(fruits.shift());
@@ -132,8 +133,10 @@ const citrus = fruits.slice(1, 3);
 console.log(citrus);
 
 console.log("Sort");
-console.log(fruits.sort());
-console.log(fruits.reverse());
+fruits.sort();
+console.log(fruits);
+fruits.reverse();
+console.log(fruits);
 
 console.log("Splice");
 fruits.splice(2, 0, "Lemon", "Kiwi")
